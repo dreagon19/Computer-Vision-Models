@@ -1,0 +1,63 @@
+The ability of perceiving the motion and shape of the hands can be used in improving user experience.
+
+For example:
+        It can form the basis of sign languages and gesture control.
+    
+
+Program in simple steps :
+        1. Import and install dependencies
+        2. Draw hands
+        3. output images
+
+Program structure:
+        1. HandTrackingModule.py
+            => This module uses the basic mediapipe hand detection model.
+            Its first function is to find if there are hands presents or not. (handDetector)
+
+            Its second function is to find the landmarks or position of the hands.
+
+
+           findHands(self,img,draw = True/False)
+                =>  this first convert the image to RGB format i.e imRGB
+
+                we use hand.process(imgRGB)
+
+                if we find any landmarks which contains hands we draw the hand landmark or skeleton like lines which moves as the hand or joints moves.
+
+           findPosition(self,img, total_Hands , draw = True/False)
+             =>in this we simply find the position of various hand landmarks 
+             we simply find the landmarks and then highlight it with circles.
+         
+           And return the list which contains the landmarks.
+
+
+        main()
+          => We create a cv2.VideoCapture 
+          => then initialize a object for handDetector class.
+          => Then process the image and simply print it into the screen.
+
+
+        2. FingerCounter.py
+            => Import HandTrackingModule as htm
+
+            => Import the images to be displayed on the WebCam feed.
+
+            => Declare a overlay list and add all the images to the overlay list.
+
+            => Set the detector's, detectionCon property as 0.7 so that it doesn't detect really small things as hands.
+
+            => declare a tips,name,pos list with corresponding values. Check the code file for the values.
+
+            => Now Check the lmList for first value and check which tips is it referring to.
+            
+            =>  declare a fingers list with empty values.
+
+            => at last check the count of 1 in the finger list.
+
+            => The count is the number of finger that is up during that time.
+
+            => lmList[tips[0]][2] -> this tells us which if the landmarks at tips[0] is present or not. If it is present it shows the name of the finger from fingerList.
+
+            => At last we press q and exit the program.    
+
+
