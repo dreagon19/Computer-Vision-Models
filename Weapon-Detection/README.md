@@ -8,7 +8,7 @@ This beta version model works on IMAGES , VIDEOS , LIVE FEEDS or WEBCAM.
 
 ## Here is the video before detection:
 
-
+[](https://user-images.githubusercontent.com/60359722/151853163-bad45df6-a94f-4466-ba9e-5b531a02384e.mp4)
 
 ## Video after detection:
 
