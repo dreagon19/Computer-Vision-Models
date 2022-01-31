@@ -39,9 +39,9 @@ with mp_selfie_segmentation.SelfieSegmentation(model_selection = 1) as selfie_se
         end = time.time()
         totalTime = end-start
 
-        fps = 1/totalTime
+        #fps = 1/totalTime
 
-        cv2.putText(output_image, f'FPS: {int(fps)}', (20,70), cv2.FONT_HERSHEY_SIMPLEX, 1.5, (0,255,0), 2)
+        #cv2.putText(output_image, f'FPS: {int(fps)}', (20,70), cv2.FONT_HERSHEY_SIMPLEX, 1.5, (0,255,0), 2)
 
         cv2.imshow("cam",output_image)
         if cv2.waitKey(1) == ord('q'):

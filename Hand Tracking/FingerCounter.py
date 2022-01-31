@@ -55,7 +55,7 @@ while True:
                 fingers.append(0)    
 
         totalFingers = fingers.count(1)
-        #print(totalFingers)
+        print(totalFingers)
 
 
     
