@@ -1,6 +1,6 @@
 # Weapon Detector Yolo v5 Model
 
-This is a light-weight Model trained on approx. 300 images.
+This is a light-weight Model trained on approx. 950 pistol images.
 
 Right now the model is capable of detecting only Pistols. The accuracy is decent and will be improved in future versions.
 
